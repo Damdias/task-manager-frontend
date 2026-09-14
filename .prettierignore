@@ -1,0 +1,7 @@
+dist
+node_modules
+coverage
+
+# Not app source — leave OpenSpec/Claude tooling docs to their own formatting
+.claude
+openspec
