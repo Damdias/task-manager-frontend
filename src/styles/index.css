@@ -1,1 +1,51 @@
 @import 'tailwindcss';
+
+@theme {
+  /* Colors */
+  --color-green: #b9ff66;
+  --color-dark: #191a23;
+  --color-grey: #f3f3f3;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Font */
+  --font-sans: 'Space Grotesk', sans-serif;
+
+  /* Radii */
+  --radius-button: 14px;
+  --radius-chip: 7px;
+
+  /* Type scale — desktop (default) */
+  --text-h1: 60px;
+  --text-h1--line-height: 77px;
+  --text-h2: 40px;
+  --text-h2--line-height: 51px;
+  --text-h3: 30px;
+  --text-h3--line-height: 38px;
+  --text-h4: 20px;
+  --text-h4--line-height: 26px;
+  --text-body: 18px;
+  --text-body--line-height: 23px;
+  --text-button: 20px;
+  --text-button--line-height: 28px;
+
+  /* Type scale — mobile variants (paired manually via `md:` on elements that need it) */
+  --text-h1-mobile: 43px;
+  --text-h1-mobile--line-height: 55px;
+  --text-h2-mobile: 36px;
+  --text-h2-mobile--line-height: 46px;
+  --text-h3-mobile: 26px;
+  --text-h3-mobile--line-height: 33px;
+  --text-h4-mobile: 18px;
+  --text-h4-mobile--line-height: 23px;
+  --text-body-mobile: 16px;
+  --text-body-mobile--line-height: 24px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-white);
+    color: var(--color-dark);
+  }
+}
